@@ -1,5 +1,3 @@
-import random
-
 
 #Kaprekars constant 6174
 
