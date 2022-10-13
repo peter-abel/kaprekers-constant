@@ -17,7 +17,7 @@ def generating_numbers():
          mylist.remove(i)
     return mylist
 
-print(len(generating_numbers()))
+#print(len(generating_numbers()))
 
 
 
@@ -44,10 +44,15 @@ def small_number(num):
 
 def subtract():
     generating_numbers()
-    new_num = largest_number(mylist[2]) - small_number(mylist[2])
+    new_num = largest_number(mylist[20]) - small_number(mylist[20])
+    count = 0
     while new_num != 6174:
+        count +=1
         new_num = largest_number(new_num) - small_number(new_num)
-        
+
+    print(count)    
     return new_num
+    
+
 
 print(subtract())
