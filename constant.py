@@ -3,17 +3,22 @@
 
 
 nums = range(1000,9999)
+mylist = []
 #function to generate the numbers.
 def generating_numbers():
-    mylist = []
-    for i in nums :
+    for i in range(1000,9999) :
         mylist.append(i)
-    return mylist   
-#print (len(nums))
-print(generating_numbers())
+    #return mylist   
+#print (len(mylist))
+#print(len(generating_numbers()))
 #funtion to meet conditions.
+#def con():
+    for i in mylist:
+      if i == 1111 or i == 2222 or i== 3333 or i == 4444 or i == 5555 or i == 6666 or i == 7777 or i == 8888 or i == 9999:
+         mylist.remove(i)
+    return mylist
 
-
+print(len(generating_numbers()))
 
 
 
