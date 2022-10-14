@@ -5,6 +5,7 @@
 #import random
 
 
+
 nums = range(1000,9999)
 mylist = []
 #function to generate the numbers.
@@ -37,22 +38,18 @@ def small_number(num):
     return int(ordered[::-1])
 
 
-
-
-
-#function to subtract return vals of above functs.
-
-def subtract():
+#function to subtract return vals of above functions.
+def subtract(i):
     generating_numbers()
-    new_num = largest_number(mylist[20]) - small_number(mylist[20])
-    count = 0
+    new_num = largest_number(mylist[i]) - small_number(mylist[i])
+    count = 1
     while new_num != 6174:
         count +=1
         new_num = largest_number(new_num) - small_number(new_num)
 
-    print(count)    
+    print("No. of iterations taken:" ,count)    
     return new_num
-    
-
-
-print(subtract())
+        
+'''The range can be adjusted to check all other numbers in the list'''
+for i in range (1,10):
+    print(subtract(i))
