@@ -31,7 +31,8 @@ class Test4(unittest.TestCase):
 
 class Test5(unittest.TestCase):
     def test_list_5(self):
-        subtract()
+       for i in range(20,25):
+        subtract(i)
         self.assertEqual(new_num,6174)
 
 
