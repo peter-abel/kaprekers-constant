@@ -8,6 +8,9 @@
 
 
 #Our four digit integer range
+from itertools import count
+
+
 nums = range(1000,9999)
 
 #creating an empty list
@@ -44,6 +47,7 @@ def small_number(num):
 def subtract(i):
     generating_numbers()
     new_num = largest_number(mylist[i]) - small_number(mylist[i])
+    global count 
     count = 1
     while new_num != 6174:
         count +=1

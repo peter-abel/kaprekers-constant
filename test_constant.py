@@ -1,6 +1,6 @@
 import unittest
 
-from constant import generating_numbers, mylist, largest_number, small_number
+from constant import generating_numbers, mylist, largest_number,count, subtract, small_number
 
 class TestConstant(unittest.TestCase):
     def test_list_int(self):
@@ -22,6 +22,12 @@ class Test3(unittest.TestCase):
         
 
 
+class Test4(unittest.TestCase):
+    def test_list_4(self):
+        for i in range(1,10):
+             subtract(i)
+        
+        self.assertGreaterEqual(count,1)
 
 if __name__ == "__main__":
     unittest.main()
