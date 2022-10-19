@@ -36,5 +36,13 @@ class Test5(unittest.TestCase):
         self.assertEqual(new_num,6174)
 
 
+
+
+class Test6(unittest.TestCase):
+    def test_list_6(self):
+         self.assertNotIn(3333,mylist)
+
+
+         
 if __name__ == "__main__":
     unittest.main()
