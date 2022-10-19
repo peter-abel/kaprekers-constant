@@ -46,8 +46,9 @@ def small_number(num):
 #function to subtract return vals of above functions.
 def subtract(i):
     generating_numbers()
+    global new_num
     new_num = largest_number(mylist[i]) - small_number(mylist[i])
-    global count 
+    global count
     count = 1
     while new_num != 6174:
         count +=1
