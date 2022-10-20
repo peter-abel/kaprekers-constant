@@ -15,6 +15,8 @@ class Test2(unittest.TestCase):
         x = largest_number(5273)
         self.assertCountEqual(str(x),str(y))
 
+
+'''Tests whether the integer is arranged in ascending order'''
 class Test3(unittest.TestCase):
     def test_list_3(self):
         y = 3142
@@ -23,6 +25,7 @@ class Test3(unittest.TestCase):
         
 
 
+'''Tests that iterations are happening hence increase in count'''
 class Test4(unittest.TestCase):
     def test_list_4(self):
         for i in range(1,10):
