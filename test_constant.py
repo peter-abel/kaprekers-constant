@@ -2,6 +2,7 @@ import unittest
 
 from constant import generating_numbers, mylist, new_num,largest_number,count, subtract, small_number
 
+'''Tests whether the length of the list has expected number'''
 class TestConstant(unittest.TestCase):
     def test_list_int(self):
         generating_numbers()
