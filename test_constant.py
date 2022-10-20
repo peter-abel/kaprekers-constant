@@ -43,7 +43,7 @@ class Test5(unittest.TestCase):
 
 
 
-
+'''Tests whether the intergers not needed were succesfully removed'''
 class Test6(unittest.TestCase):
     def test_list_6(self):
          self.assertNotIn(3333,mylist)
